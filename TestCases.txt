@@ -4,8 +4,10 @@ Test cases
 2. Can add an item price (Green)
 3. Can add item (Green)
 4. Can calculate the current total (Green)
-5. Can add multiple items and get correct total
+5. Can add multiple items and get correct total (Green)
 6. Can add discount rules
 7. Can apply discount rules to total
-8. Exception is Thrown for item added without a price
+8. Can calculate correct value for Scenario A
+9. Can calculate correct value for Scenario B
+10. Can calculate correct value for Scenario C
 
