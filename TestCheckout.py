@@ -54,3 +54,14 @@ def test_ScenarioB1(checkout):
     checkout.addDiscount('A',3, 130)
     checkout.addItems('A', 5)
     assert checkout.calculateTotal() == 230
+
+def test_ScenarioC(checkout):
+    checkout.addDiscount('A',3, 130)
+    checkout.addDiscount('B',2, 45)
+    checkout.addDiscount('C',1, 15)
+    checkout.addDiscount('D',1, 15)
+    checkout.addItems('A', 3)
+    checkout.addItems('B', 5)
+    checkout.addItems('C', 1)
+    checkout.addItems('D', 1)
+    assert checkout.calculateTotal() == 280
