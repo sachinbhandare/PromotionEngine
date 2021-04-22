@@ -3,7 +3,7 @@ Test cases
 1. Can create instance of Checkout class (Green)
 2. Can add an item price (Green)
 3. Can add item (Green)
-4. Can calculate the current total
+4. Can calculate the current total (Green)
 5. Can add multiple items and get correct total
 6. Can add discount rules
 7. Can apply discount rules to total
