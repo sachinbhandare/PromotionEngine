@@ -1,3 +1,4 @@
+from Checkout import Checkout
 
 def test_CanInstantiatieCheckout():
-    assert True
+    co = Checkout()
