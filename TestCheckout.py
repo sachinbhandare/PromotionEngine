@@ -40,3 +40,17 @@ def test_ScenarioA(checkout):
     checkout.addItem('B')
     checkout.addItem('C')
     assert checkout.calculateTotal() == 100
+
+def test_ScenarioB(checkout):
+    checkout.addDiscount('A',3, 130)
+    checkout.addDiscount('B',2, 45)
+    checkout.addItems('A', 5)
+    checkout.addItems('B', 5)
+    checkout.addItems('C', 1)
+    assert checkout.calculateTotal() == 370
+
+@pytest.mark.skip
+def test_ScenarioB1(checkout):
+    checkout.addDiscount('A',3, 130)
+    checkout.addItems('A', 5)
+    assert checkout.calculateTotal() == 230
