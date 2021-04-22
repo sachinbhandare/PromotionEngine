@@ -1,6 +1,6 @@
 Test cases
 
-1. Can create instance of Checkout class
+1. Can create instance of Checkout class (Green)
 2. Can add an item price
 3. Can add item 
 4. Can calculate the current total
