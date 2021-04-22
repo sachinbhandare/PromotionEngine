@@ -52,3 +52,24 @@ Total = 370
 
 Total = 280
 ```
+
+Sample testing output:
+```
+(python3_pytest) sbhandare@pranavs-laplop:~/PromotionEngine$ pytest -v -s TestCheckout.py 
+============================================================= test session starts =============================================================
+platform linux -- Python 3.8.5, pytest-6.2.3, py-1.10.0, pluggy-0.13.1 -- /home/sbhandare/PromotionEngine/python3_pytest/bin/python
+cachedir: .pytest_cache
+rootdir: /home/sbhandare/PromotionEngine
+collected 8 items                                                                                                                             
+
+TestCheckout.py::test_CanCalculateTotal PASSED
+TestCheckout.py::test_GetCorrectTotalWithMultipleItems PASSED
+TestCheckout.py::test_CanAddDiscountRule PASSED
+TestCheckout.py::test_CanApplyDiscountRule PASSED
+TestCheckout.py::test_ScenarioA PASSED
+TestCheckout.py::test_ScenarioB PASSED
+TestCheckout.py::test_ScenarioB1 SKIPPED (unconditional skip)
+TestCheckout.py::test_ScenarioC PASSED
+
+======================================================== 7 passed, 1 skipped in 0.01s =========================================================
+```
